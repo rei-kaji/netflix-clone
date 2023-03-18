@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 
 type Props = {};
 
-const Auth = () => {
+export default function Auth() {
   const router = useRouter();
 
   const [email, setEmail] = useState("");
@@ -128,6 +128,4 @@ const Auth = () => {
       </div>
     </div>
   );
-};
-
-export default Auth;
+}
