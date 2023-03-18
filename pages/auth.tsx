@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 
 type Props = {};
 
-const Auth = (props: Props) => {
+const Auth = () => {
   const router = useRouter();
 
   const [email, setEmail] = useState("");
@@ -34,6 +34,7 @@ const Auth = (props: Props) => {
         redirect: false,
         callbackUrl: "/",
       });
+
       router.push("/profiles");
     } catch (error) {
       console.log(error);
@@ -47,6 +48,7 @@ const Auth = (props: Props) => {
         name,
         password,
       });
+
       login();
     } catch (error) {
       console.log(error);
@@ -111,7 +113,7 @@ const Auth = (props: Props) => {
             </div>
             <p className="text-neutral-500 mt-12">
               {variant === "login"
-                ? "First time using Reiflix?"
+                ? "First time using Netflix?"
                 : "Already have an account?"}
               <span
                 onClick={toggleVariant}
