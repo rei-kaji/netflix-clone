@@ -97,12 +97,12 @@ export default function Auth() {
               {variant === "login" ? "Login" : "Sign up"}
             </button>
             <div className="flex flex-row items-center gap-4 mt-8 justify-center">
-              <div
+              {/* <div
                 onClick={() => signIn("google", { callbackUrl: "/" })}
                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition"
               >
                 <FcGoogle size={32} />
-              </div>
+              </div> */}
               <div
                 onClick={() => signIn("github", { callbackUrl: "/profiles" })}
                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 transition"
